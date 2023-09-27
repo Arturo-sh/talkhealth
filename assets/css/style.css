@@ -1,17 +1,35 @@
 /* Inicio de paleta de colores del área médica */
+/* Colores de fondo */
 .bg-crema {
-    color: #FBFFDC !important;
+    background-color: #FBFFDC !important;
 }
 
 .bg-verde {
-    color: #D0F5BE !important;
+    background-color: #D0F5BE !important;
 }
 
 .bg-azul {
-    color: #79E0EE !important;
+    background-color: #79E0EE !important;
 }
 
 .bg-menta {
+    background-color: #98EECC !important;
+}
+
+/* Colores de fuentes */
+.text-crema {
+    color: #FBFFDC !important;
+}
+
+.text-verde {
+    color: #D0F5BE !important;
+}
+
+.text-azul {
+    color: #79E0EE !important;
+}
+
+.text-menta {
     color: #98EECC !important;
 }
 /* Final de paleta de colores del área médica */
