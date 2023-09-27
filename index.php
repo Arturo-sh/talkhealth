@@ -22,17 +22,55 @@
     <!-- Custom CSS -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 
+    <style>
+      #main {
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column;
+        margin: 6% 0;
+      }
+
+      @media (min-width: 768px) {
+        #main {
+          flex-direction: row;
+          /* display: block; */
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-  <div class="container-fluid">
-  <div class="row">
-  <div class="col-xs-12 col-sm-6 col-md-4"><img src="assets/img/logo_app.jpg"></div>
-  <div class="col-xs-12 col-sm-6 col-md-4">.col-xs-6 .col-md-4</div>
-  </div>
-</div>
-</div>
-</div>
+    <div class="container-fluid">
+        <div class="row" id="main">
+
+          <div class="col-xs-6 col-sm-12 col-sm-6 col-md-4">
+            <img class="img-responsive" src="assets/img/logo_app.jpg">
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="login-box-body">
+              <p class="login-box-msg"><i class="fa fa-user icon-title"></i>INICIO DE SESIÓN</p> <br/>
+              <form action="login-check.php" method="POST">
+                <div class="form-group has-feedback">
+                  <input type="text" class="form-control" name="username" placeholder="Usuario" autocomplete="off" required />
+                  <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                  <input type="password" class="form-control" name="password" placeholder="Contraseña" required />
+                  <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div> <br/>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="submit" class="btn btn-info btn-lg btn-block btn-flat" name="login" value="Continuar" />
+                  </div> <!-- /.col -->
+                </div>
+              </form>
+            </div> <!-- /.login-box-body -->
+          </div>
+
+        </div>
+    </div>
+
     <!-- jQuery 2.1.3 -->
     <script src="assets/plugins/jQuery/jQuery-2.1.3.min.js"></script>
     <!-- Bootstrap 3.3.2 JS -->
