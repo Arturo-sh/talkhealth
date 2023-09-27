@@ -39,17 +39,17 @@
       }
     </style>
   </head>
-  <body>
+  <body class="bg-menta">
     <div class="container-fluid">
         <div class="row" id="main">
 
-          <div class="col-xs-6 col-sm-12 col-sm-6 col-md-4">
-            <img class="img-responsive" src="assets/img/logo_app.jpg">
+          <div class="col-xs-6 col-sm-12 col-sm-6 col-md-4" style="margin: 15px 0;">
+            <img class="img-responsive img-circle" src="assets/img/logo_app.jpg">
           </div>
 
           <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="login-box-body">
-              <p class="login-box-msg"><i class="fa fa-user icon-title"></i>INICIO DE SESIÓN</p> <br/>
+            <div class="login-box-body"  style="border-radius: 25px;">
+              <p class="login-box-msg">INICIO DE SESIÓN</p>
               <form action="login-check.php" method="POST">
                 <div class="form-group has-feedback">
                   <input type="text" class="form-control" name="username" placeholder="Usuario" autocomplete="off" required />
