@@ -57,6 +57,7 @@
                 <div class='panel-body'>
                   <p><strong>Nombre: </strong>: $nombre_profesionista $apellidos</p>
                   <p><strong>Area: </strong>: $nombre_area</p>
+                  <p><strong>Telefono</strong>: $telefono</p>
                   <p><strong>Horario de atención</strong>: $horario_atencion</p>
                   <p><strong>Precios </strong>: $precio_consulta</p>
                   <div class='text-center'>";
@@ -102,7 +103,6 @@
               <div class='panel-body'>
                 <p><strong>Nombre: </strong>: $nombre_profesionista $apellidos</p>
                 <p><strong>Area: </strong>: $nombre_area</p>
-                <p><strong>Telefono</strong>: $telefono</p>
                 <p><strong>Horario de atención</strong>: $horario_atencion</p>
                 <p><strong>Precios </strong>: $precio_consulta</p>
                 <div class='text-center'>";

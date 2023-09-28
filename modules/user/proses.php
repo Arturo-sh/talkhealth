@@ -6,13 +6,6 @@ session_start();
 
 require_once "../../config/database.php";
 
-
-if (empty($_SESSION['username']) && empty($_SESSION['password'])){
-	echo "<meta http-equiv='refresh' content='0; url=index.php?alert=1'>";
-}
-
-else {
-
 	if ($_GET['act']=='insert') {
 		if (isset($_POST['Guardar'])) {
 	
@@ -27,7 +20,7 @@ else {
 
           
             if ($query) {
-                header("location: ../../main.php?module=user&alert=1");
+                header("location: ../../login.php");
             }
 		}	
 	}
@@ -206,5 +199,5 @@ else {
             }
 		}
 	}		
-}		
+	
 ?>
