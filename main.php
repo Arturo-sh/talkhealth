@@ -13,7 +13,7 @@ session_start();
 
     
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/img/logo_app.jpg" />
+    <link rel="shortcut icon" href="assets/img/logo_app1.jpg" />
 
 
     <!-- Bootstrap 3.3.2 -->
@@ -82,10 +82,10 @@ session_start();
   <body class="skin-blue fixed">
     <div class="wrapper">
       
-      <header class="main-header">
+      <header class="main-header bg-crema">
         <!-- Logo -->
         <a href="#" class="logo">
-          <img style="margin-top: -5px; margin-right: 5px; width: 40px;" src="assets/img/logo_app.jpg" alt="Logo"> 
+          <img style="margin-top: -5px; margin-right: 5px; width: 40px;" src="assets/img/logo_app1.jpg" alt="Logo"> 
           <span style="font-size:20px">TALKHEALTH</span>
         </a>
 
@@ -140,7 +140,7 @@ session_start();
 
       </div><!-- /.content-wrapper -->
 
-      <footer class="main-footer">
+      <footer class="main-footer text-center">
         <strong>Copyright &copy; <?php echo date('Y');?> - ITSJC.</strong>
       </footer>
     </div><!-- ./wrapper -->

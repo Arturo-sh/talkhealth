@@ -8,7 +8,7 @@
     <meta name="description" content="Aplicación de telemédicina orientada al público en general de toda la república mexicana">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/img/logo_app.jpg" />
+    <link rel="shortcut icon" href="assets/img/logo_app1.jpg" />
     
     <style>
         body {

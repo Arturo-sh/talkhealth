@@ -15,7 +15,6 @@ require_once "config/fungsi_rupiah.php";
 	elseif ($_GET['module'] == 'form_medicines') {
 		include "modules/medicines/form.php";
 	}
-	
 
 	elseif ($_GET['module'] == 'medicines_transaction') {
 		include "modules/medicines_transaction/view.php";
