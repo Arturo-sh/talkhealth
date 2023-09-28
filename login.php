@@ -9,7 +9,7 @@
     <meta name="description" content="Aplicación de telemédicina orientada al público en general de toda la república mexicana">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/img/logo_app.jpg" />
+    <link rel="shortcut icon" href="assets/img/logo_app1.jpg" />
 
     <!-- Bootstrap 3.3.2 -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -42,8 +42,8 @@
     <div class="container-fluid">
         <div class="row" id="main">
 
-          <div class="col-xs-6 col-sm-12 col-sm-6 col-md-4" style="margin: 15px 0;">
-            <img class="img-responsive img-circle" src="assets/img/logo_app.jpg">
+          <div class="col-xs-6 col-sm-12 col-sm-6 col-md-4 img-circle" style="margin: 15px 0; background: #FFFFFF; opacity: 0.9;">
+            <img class="img-responsive img-circle" src="assets/img/logo_app.png">
           </div>
 
           <div class="col-xs-12 col-sm-6 col-md-4">

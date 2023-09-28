@@ -50,7 +50,6 @@
               $horario_atencion = $data['horario_consulta'];
               $precio_consulta = $data['precios_consulta'];
               $ubicacion = $data['precios_consulta'];
-
              
             echo "      
             <div class='col-md-4'>
@@ -58,14 +57,13 @@
                 <div class='panel-body'>
                   <p><strong>Nombre: </strong>: $nombre_profesionista $apellidos</p>
                   <p><strong>Area: </strong>: $nombre_area</p>
-                  <p><strong>Telefono</strong>: $telefono</p>
                   <p><strong>Horario de atención</strong>: $horario_atencion</p>
                   <p><strong>Precios </strong>: $precio_consulta</p>
                   <div class='text-center'>";
                   if (isset($_SESSION['id_user'])){
                     echo "
-                    <a href='https://wa.me/+52$telefono/?text=Hola, se encuentra disponible?' target='_blank' class='bg-verde btn'>Contactar</a>
-                    <a href='info.php?id=$id_profesionista' target='_blank' class='bg-menta btn'>Ver ubicación</a>
+                    <a href='https://wa.me/+52$telefono/?text=Hola, se encuentra disponible?' class='bg-verde btn'>Contactar</a>
+                    <a href='info.php?id=$id_profesionista' class='bg-menta btn'>Ver ubicación</a>
                     ";
                   }
                     echo "
