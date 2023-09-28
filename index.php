@@ -64,6 +64,9 @@
                     <input type="submit" class="btn btn-info btn-lg btn-block btn-flat" name="login" value="Continuar" />
                   </div> <!-- /.col -->
                 </div>
+                <div class="text-center" style="margin-top: 10px;">
+                  <p>¿Aún no tienes cuenta? Crea una <a href="crear_cuenta.php">aquí</a></p>
+                </div>
               </form>
             </div> <!-- /.login-box-body -->
           </div>

@@ -4,7 +4,7 @@
       <i class="fa fa-home icon-title"></i> Inicio
     </h1>
     <ol class="breadcrumb">
-      <li><a href="?module=beranda"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
     </ol>
   </section>
   
@@ -12,117 +12,60 @@
   <section class="content">
     <div class="row">
       <div class="col-lg-12 col-xs-12">
-        <div class="alert alert-info alert-dismissable">
+        <h3>Bienvenido a Talkhealth, "Hablando con la salud"</h3>
+        
+        <div class="container">
+          <!-- Carousel
+          ================================================== -->
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img class="first-slide" src="assets/img/logo_app.jpg" alt="First slide">
+              </div>
+              <div class="item">
+                <img class="second-slide" src="assets/img/favicon.png" alt="Second slide">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Another example headline.</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img class="third-slide" src="assets/img/icons.png" alt="Third slide">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>One more for good measure.</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div><!-- /.carousel -->
+        </div>
+
+        <!-- <div class="alert alert-info alert-dismissable">
           <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
           <p style="font-size:15px">
-            <i class="icon fa fa-user"></i> Bienvenido <strong><?php echo $_SESSION['name_user']; ?></strong> a la aplicación de inventario de medicamentos.
+            <i class="icon fa fa-user"></i> Bienvenido Talkhealth.
           </p>        
-        </div>
+        </div> -->
       </div>  
     </div>
-   
-    <!-- Small boxes (Stat box) -->
-    <div class="row">
-      <div class="col-lg-3 col-xs-6">
-        <!-- small box -->
-        <div style="background-color:#00c0ef;color:#fff" class="small-box">
-          <div class="inner">
-            <?php  
-          
-            $query = mysqli_query($mysqli, "SELECT COUNT(codigo) as numero FROM medicamentos")
-                                            or die('Error '.mysqli_error($mysqli));
-
-           
-            $data = mysqli_fetch_assoc($query);
-            ?>
-            <h3><?php echo $data['numero']; ?></h3>
-            <p>Datos de Medicamentos</p>
-          </div>
-          <div class="icon">
-            <i class="fa fa-folder"></i>
-          </div>
-          <?php  
-          if ($_SESSION['permisos_acceso']!='gerente') { ?>
-            <a href="?module=form_medicines&form=add" class="small-box-footer" title="Agregar" data-toggle="tooltip"><i class="fa fa-plus"></i></a>
-          <?php
-          } else { ?>
-            <a class="small-box-footer"><i class="fa"></i></a>
-          <?php
-          }
-          ?>
-        </div>
-      </div><!-- ./col -->
-
-      <div class="col-lg-3 col-xs-6">
-        <!-- small box -->
-        <div style="background-color:#00a65a;color:#fff" class="small-box">
-          <div class="inner">
-            <?php   
-   
-            $query = mysqli_query($mysqli, "SELECT COUNT(codigo_transaccion) as numero FROM transaccion_medicamentos")
-                                            or die('Error '.mysqli_error($mysqli));
-
-
-            $data = mysqli_fetch_assoc($query);
-            ?>
-            <h3><?php echo $data['numero']; ?></h3>
-            <p>datos de entrada de Medicamentos</p>
-          </div>
-          <div class="icon">
-            <i class="fa fa-sign-in"></i>
-          </div>
-          <?php  
-          if ($_SESSION['permisos_acceso']!='gerente') { ?>
-            <a href="?module=form_medicines_transaction&form=add" class="small-box-footer" title="Agregar" data-toggle="tooltip"><i class="fa fa-plus"></i></a>
-          <?php
-          } else { ?>
-            <a class="small-box-footer"><i class="fa"></i></a>
-          <?php
-          }
-          ?>
-        </div>
-      </div><!-- ./col -->
-
-      <div class="col-lg-3 col-xs-6">
-        <!-- small box -->
-        <div style="background-color:#f39c12;color:#fff" class="small-box">
-          <div class="inner">
-            <?php  
-  
-            $query = mysqli_query($mysqli, "SELECT COUNT(codigo) as numero FROM medicamentos")
-                                            or die('Error'.mysqli_error($mysqli));
-
-            $data = mysqli_fetch_assoc($query);
-            ?>
-            <h3><?php echo $data['numero']; ?></h3>
-            <p>Stock Medicamentos</p>
-          </div>
-          <div class="icon">
-            <i class="fa fa-file-text-o"></i>
-          </div>
-          <a href="?module=stock_inventory" class="small-box-footer" title="Imprimir" data-toggle="tooltip"><i class="fa fa-print"></i></a>
-        </div>
-      </div><!-- ./col -->
-
-      <div class="col-lg-3 col-xs-6">
-        <!-- small box -->
-        <div style="background-color:#dd4b39;color:#fff" class="small-box">
-          <div class="inner">
-            <?php   
-  
-            $query = mysqli_query($mysqli, "SELECT COUNT(codigo_transaccion) as numero FROM transaccion_medicamentos")
-                                            or die('Error: '.mysqli_error($mysqli));
-
-            $data = mysqli_fetch_assoc($query);
-            ?>
-            <h3><?php echo $data['numero']; ?></h3>
-            <p>Registros de Medicamentos</p>
-          </div>
-          <div class="icon">
-            <i class="fa fa-clone"></i>
-          </div>
-          <a href="?module=stock_report" class="small-box-footer" title="Imprimir" data-toggle="tooltip"><i class="fa fa-print"></i></a>
-        </div>
-      </div><!-- ./col -->
-    </div><!-- /.row -->
   </section><!-- /.content -->

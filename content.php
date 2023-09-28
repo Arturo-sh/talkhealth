@@ -12,8 +12,8 @@ else {
 		include "modules/start/view.php";
 	}
 
-	elseif ($_GET['module'] == 'medicines') {
-		include "modules/medicines/view.php";
+	elseif ($_GET['module'] == 'search') {
+		include "modules/search/view.php";
 	}
 
 	elseif ($_GET['module'] == 'form_medicines') {

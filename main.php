@@ -6,14 +6,15 @@ session_start();
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Panel de administración | Inventario de Medicamentos</title>
+    <title>Talkhealth</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Inventario de Medicamentos">
-    <meta name="author" content="Inventario de Medicamentos - Sistemas Web" />
+    <meta name="description" content="Aplicación de telemédicina orientada al público en general de toda la república mexicana">
+
     
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" />
+    <link rel="shortcut icon" href="assets/img/logo_app.jpg" />
+
 
     <!-- Bootstrap 3.3.2 -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />    
@@ -83,9 +84,9 @@ session_start();
       
       <header class="main-header">
         <!-- Logo -->
-        <a href="?module=beranda" class="logo">
-          <img style="margin-top:-15px;margin-right:5px" src="assets/img/logo-blue.png" alt="Logo"> 
-          <span style="font-size:20px">MEDISYS</span>
+        <a href="#" class="logo">
+          <img style="margin-top: -5px; margin-right: 5px; width: 40px;" src="assets/img/logo_app.jpg" alt="Logo"> 
+          <span style="font-size:20px">TALKHEALTH</span>
         </a>
 
         <nav class="navbar navbar-static-top" role="navigation">
@@ -140,7 +141,7 @@ session_start();
       </div><!-- /.content-wrapper -->
 
       <footer class="main-footer">
-        <strong>Copyright &copy; <?php echo date('Y');?> - <a href="http://obedalvarado.pw/" target="_blank">Sistemas Web</a>.</strong>
+        <strong>Copyright &copy; <?php echo date('Y');?> - ITSJC.</strong>
       </footer>
     </div><!-- ./wrapper -->
 
