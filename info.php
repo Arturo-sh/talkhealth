@@ -9,7 +9,6 @@
             flex-direction: row;
             align-items: center;
             flex-flow: column;
-            f;;
         }
     </style>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -26,7 +25,6 @@
       @media (min-width: 768px) {
         #main {
           flex-direction: row;
-          /* display: block; */
         }
       }
 

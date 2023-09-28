@@ -1,13 +1,11 @@
-
 <?php  
 
 require_once "config/database.php";
 
-
-$query = mysqli_query($mysqli, "SELECT id_user, name_user, foto, permisos_acceso FROM usuarios WHERE id_user='$_SESSION[id_user]'")
-                                or die('error: '.mysqli_error($mysqli));
-
-
+if (!isset($_SESSION['id_user'])) {
+  echo "<a href='login.php' class='btn btn-md bg-crema' style='margin-top: 6px;'>Iniciar sesión</a>";
+} else {
+$query = mysqli_query($mysqli, "SELECT id_user, name_user, foto, permisos_acceso FROM usuarios WHERE id_user='$_SESSION[id_user]'") or die('error: '.mysqli_error($mysqli));
 $data = mysqli_fetch_assoc($query);
 ?>
 
@@ -60,3 +58,7 @@ $data = mysqli_fetch_assoc($query);
     </li>
   </ul>
 </li>
+<?php
+}
+
+?>
