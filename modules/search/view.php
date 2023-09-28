@@ -28,14 +28,13 @@
 
           $sql = "SELECT * FROM areas AS a INNER JOIN profesionistas AS p ON a.id_area = p.id_area WHERE a.nombre_area LIKE '%$profesion%'";
           $query = mysqli_query($mysqli, $sql) or die('Error '.mysqli_error($mysqli));
-           
-          
 
           if(mysqli_num_rows($query) > 0) {
             
             echo "<div class='row'> <br>";
 
             while ($data = mysqli_fetch_array($query)) {
+              $id_profesionista = $data['id_profesionista'];
               $nombre_profesionista = $data['nombre'];
               $apellidos = $data['apellidos'];
               $nombre_area = $data['nombre_area'];
@@ -43,6 +42,7 @@
               $telefono = $data['telefono'];
               $horario_atencion = $data['horario_consulta'];
               $precio_consulta = $data['precios_consulta'];
+              $ubicacion = $data['precios_consulta'];
 
              
             echo "      
@@ -56,6 +56,7 @@
                   <p><strong>Precios </strong>: $precio_consulta</p>
                   <div class='text-center'>
                     <a href='https://wa.me/+52$telefono/?text=Hola, se encuentra disponible?' target='_blank' class='bg-verde btn'>Contactar</a>
+                    <a href='info.php?id=$id_profesionista' target='_blank' class='bg-menta btn'>Ver ubicación</a>
                   </div>
                 </div>
               </div>
