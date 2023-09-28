@@ -1,0 +1,5 @@
+* Agregar datos funcionales a la base de datos
+
+* Agregar el formulario para agregar cuentas
+
+* Testeo del prototipo

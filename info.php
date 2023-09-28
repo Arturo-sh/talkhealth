@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test de código</title>
+<meta charset="UTF-8">
+    <title>Talkhealth</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Aplicación de telemédicina orientada al público en general de toda la república mexicana">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/logo_app.jpg" />
+    
     <style>
         body {
             flex-direction: row;
             align-items: center;
             flex-flow: column;
-            f;;
         }
     </style>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -26,7 +31,6 @@
       @media (min-width: 768px) {
         #main {
           flex-direction: row;
-          /* display: block; */
         }
       }
 
@@ -73,14 +77,14 @@
     $ubicacion = $data['ubicacion'];
 
 
-    $var = "<iframe id='if' src='$ubicacion' class='' width='100%' height='400' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>";
+    $iframe = "<iframe id='if' src='$ubicacion' class='' width='100%' height='400' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>";
     ?>
 
     <div class="container-fluid">
         <div class="row" id="main">
 
           <div class="col-xs-12 col-sm-12 col-sm-6 col-md-6" style="margin: 15px 0;">
-            <?php echo $var; ?>
+            <?php echo $iframe; ?>
           </div>
 
           <div class="col-xs-12 col-sm-6 col-md-4">

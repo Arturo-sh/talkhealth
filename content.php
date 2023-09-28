@@ -4,10 +4,6 @@ require_once "config/fungsi_tanggal.php";
 require_once "config/fungsi_rupiah.php";
 
 
-if (empty($_SESSION['username']) && empty($_SESSION['password'])){
-	echo "<meta http-equiv='refresh' content='0; url=index.php?alert=1'>";
-}
-else {
 	if ($_GET['module'] == 'start') {
 		include "modules/start/view.php";
 	}
@@ -59,5 +55,4 @@ else {
 	elseif ($_GET['module'] == 'password') {
 		include "modules/password/view.php";
 	}
-}
 ?>
