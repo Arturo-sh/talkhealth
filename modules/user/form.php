@@ -44,17 +44,6 @@ if ($_GET['form']=='add') { ?>
                 </div>
               </div>
 
-              <div class="form-group">
-                <label class="col-sm-2 control-label">Permisos de acceso</label>
-                <div class="col-sm-5">
-                  <select class="form-control" name="permisos_acceso" required>
-                    <option value=""></option>
-                    <option value="Super Admin">Super Admin</option>
-                    <option value="Gerente">Gerente</option>
-                    <option value="Almacen">Almacén</option>
-                  </select>
-                </div>
-              </div>
             </div><!-- /.box body -->
 
             <div class="box-footer">
