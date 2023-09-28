@@ -12,6 +12,10 @@ require_once "config/fungsi_rupiah.php";
 		include "modules/search/view.php";
 	}
 
+	elseif ($_GET['module'] == 'profesion') {
+		include "modules/profesions/form.php";
+	}
+
 	elseif ($_GET['module'] == 'form_medicines') {
 		include "modules/medicines/form.php";
 	}

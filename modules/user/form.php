@@ -6,13 +6,8 @@ if ($_GET['form']=='add') { ?>
 
   <section class="content-header">
     <h1>
-      <i class="fa fa-edit icon-title"></i> Agregar Usuario
+      <i class="fa fa-edit icon-title"></i> Crear usuario
     </h1>
-    <ol class="breadcrumb">
-      <li><a href="?module=start"><i class="fa fa-home"></i> Inicio </a></li>
-      <li><a href="?module=user"> Usuario </a></li>
-      <li class="active"> agregar </li>
-    </ol>
   </section>
 
   <section class="content">
